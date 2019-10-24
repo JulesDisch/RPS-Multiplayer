@@ -188,9 +188,9 @@ $(document).ready(function () {
     var RockDiv = $("<div class = 'RPS'>");
     var PaperDiv = $("<div class = 'RPS'>");
     var ScissorsDiv = $("<div class = 'RPS'>");
-    var RockImage = $("<img class='choice-image' choice-value='Rock' src='assets/images/Rock.png' alt='Rock'>");
-    var PaperImage = $("<img class='choice-image' choice-value='Paper' src='assets/images/Paper2.png' alt='Paper'>");
-    var ScissorsImage = $("<img class='choice-image' choice-value='Scissors' src='assets/images/Scissors2.png' alt='Scissors'>");
+    var RockImage = $("<img class='choice-image' choice-value='Rock' src='assets/images/rock.png' alt='Rock'>");
+    var PaperImage = $("<img class='choice-image' choice-value='Paper' src='assets/images/paper2.png' alt='Paper'>");
+    var ScissorsImage = $("<img class='choice-image' choice-value='Scissors' src='assets/images/scissors2.png' alt='Scissors'>");
     RockDiv.append(RockImage);
     PaperDiv.append(PaperImage);
     ScissorsDiv.append(ScissorsImage);
