@@ -1,0 +1,441 @@
+body, html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #777777;
+  background-color: #043634;
+  background-image: url("../../../Responsive-Portfolio/assets/images/another.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  margin: 8px;
+}
+  
+* {
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.container {
+  width: 100%;
+  clear: both;        
+}
+    
+#main-container {
+  padding-top: 80px;
+  height: 100%;
+  margin-bottom: 60px;
+} 
+  
+.main-section {
+  text-align: left;
+  overflow: auto;
+  padding: 20px;
+  background-color: #043634;
+  border-color: #dddddd;
+  border: 1px solid;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 960px; 
+  margin-left: auto;
+  margin-right: auto; 
+  opacity: 0.9;
+}
+  
+header {
+  position:fixed;
+  width: 100%;
+  margin: -10px -10px 40px;
+  background-color: #043634;
+  border-bottom:  2px  solid #cccccc;
+  z-index: 99;
+  opacity: 0.9;
+}
+
+#logo {
+  float: left;
+  width: 250px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
+  margin-left: 10px;
+}
+
+nav {
+  float: right;
+  padding-top: 30px;
+  font-size: 24px;
+  height: 80px;
+}  
+
+nav a:hover:not(.active) {
+  background-color: #4aaaa5;
+}
+
+.navbar a {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  padding: 0px 15px;      
+}
+
+.dropbtn {
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-right: 1px  solid #bbb;
+  border-radius: 0px;   
+  outline: none;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 20px 0;
+  color: #4aaaa5;
+} 
+  
+h2 {
+  font-size: 20px;
+  margin-top: 30px;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+a {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+  color: #4aaaa5;
+  text-align: center;
+  text-decoration: none;
+  display: inline;    
+}
+      
+div {
+  margin: auto;
+}   
+      
+hr {
+  border: 1px solid #777777;
+  border-radius: 10px;
+}
+
+#extra{
+  font-family: 'Times New Roman', Times, serif; 
+  width: 95%;
+  max-width: 960px; 
+  top: 125px;
+}
+
+#Directions {
+  width: 95%;
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+#which-player {
+  width: 95%;
+}
+
+#which-player h2{
+ margin-top: 0;
+ padding-bottom: 0;
+}
+
+#current-turn h2 {  
+  margin-top: 0;
+  text-align: center;
+  padding-top: 0;
+}
+  
+#game {
+  background-color: #DDDDEE;
+  background-image: url("../../../Unit-4-Game/assets/images/night-sky-background-with-moon-above-clouds-vector-17415676.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 20px;
+  max-width: 960px; 
+  top: 125px;
+}
+
+#game-play{
+  text-align: center;
+}
+  
+#player1,
+#result,
+#player2 {
+  position: relative;
+  display: inline-block;
+  width: 30%;
+  height: 168px;
+  padding: 10px;
+  margin: 2% 0;
+  text-align: center;
+  vertical-align: top;
+  border: 2px solid #000;
+}
+
+#player1{
+  float: left;
+}
+
+#player2{
+  float: right;
+}
+
+#player1-name,
+#player2-name {
+  margin-bottom: 15px;
+  font-size: 28px;
+ }
+  
+#player1-chosen,
+#player2-chosen {
+  margin-top: 25px;
+  font-size: 40px;
+}
+  
+.outcomes {
+  position: absolute;
+  bottom: 10px;
+  width: 90%;
+  text-align: center;
+}
+  
+.outcome-trackers { 
+  display: inline-block;
+}
+  
+#result h2 {
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 400px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(1,16,39,0.5); 
+}
+  
+.modal-content {
+  background-color: #012573;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #0985FD;
+  width: 30%;
+  text-align: center;
+}
+  
+.modal-content h3 {
+  color: white;
+  padding-bottom: 10px;
+  font-family: Verdana, Arial;
+  font-weight: 500;
+}
+  
+#chat {
+  position: relative;
+  width: 80%;
+  margin: 20px auto;
+  border: 5px solid;
+  bottom: 20px
+}
+
+#chat h2 {
+  margin-top: 0px;
+  padding-left: 20px;
+}
+  
+#chat-messages {
+  height: 125px;
+  overflow: auto;
+  padding: 0 20px;
+  border: 1px solid;
+  border-radius: 0px;
+  background-color: rgba(1,16,39,0.7);
+  color: #0069AA; 
+}
+  
+#chat-bar {
+  bottom: 10px;
+  padding-left: 10px;
+}
+  
+#chat-input {
+  width: 85%;
+}
+  
+#chat-send {
+  width: 10%;
+}
+   
+img {
+  width: 30%;
+  border: 0 none;
+  opacity: 0.8;
+}
+  
+button {
+  color:#011031;
+  background-color: #7AE1F1;
+  border-color: #0069AA;
+  padding: 5px;
+  margin: 5px; 
+}
+
+button:hover {
+  background-color: darkslateblue
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  left: 0;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  z-index: 99;
+  opacity: 0.9;
+  background-color: #043634;
+  border-color: #cccccc;
+  border-top:  2px  solid #cccccc;
+}
+  
+footer p {
+  padding: 12px 0;
+}
+
+.RPS {
+  display: inline;
+}
+  
+@media screen and (max-width: 768px) {
+  .RPS {
+    display: block;
+  }
+
+  #player1,
+  #result,
+  #player2 { 
+    height: 250px;
+  } 
+}
+
+@media screen and (max-width: 640px) {     
+  header {
+    position: static;
+    width: auto;
+    margin: -8px -8px 10px;
+  }
+  
+  footer {
+    position: static;
+    width: auto;
+    margin: auto -8px -8px;
+    opacity: 1;
+    border-radius: 0px;
+  }
+  
+  footer p {
+    padding-bottom: 8px;
+  }
+    
+  #logo {
+    width: 100%;
+    margin-left: 0px;
+    clear: both; 
+  }
+  
+  nav { 
+    margin-left: 0px;
+    clear: both; 
+  }  
+  
+  .dropdown-content a {
+    padding: 5px 10px;
+  }
+  
+  #main-container {
+    padding-top: 10px;
+  } 
+      
+  .main-section {
+    width: 100%;
+    margin-left: 0px
+  }
+
+  #player1,
+  #result,
+  #player2 {     
+    height: 200px;
+       
+  }
+
+  #current-turn h2 {  
+    margin-top: 10px;
+       
+  }
+}

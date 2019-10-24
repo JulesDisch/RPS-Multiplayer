@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Oh, Shoot! | Julia Dischell</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/site.webmanifest">
+</head>
+<header>
+  <div class="navbar">
+    <a id="logo" href="#">Julia Dischell</a>
+    <nav>
+      <div class="dropdown">
+        <button class="dropbtn"><a>About</a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../Responsive-Portfolio/index.html">Bio</a>
+          <a href="https://www.linkedin.com/in/juliadischell/" target="_blank">LinkedIn</a>
+          <a href="../Responsive-Portfolio/assets/images/JDresume2019.pdf" target="_blank">Resume</a>
+          <a href="https://github.com/JulesDisch" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"> <a>Contact</a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="mailto:jmdischell@gmail.com">Email</a>
+          <a href="tel:12158962289">Call</a>
+          <a href="../Responsive-Portfolio/contact.html">Contact form</a>
+        </div>
+      </div>
+      <a href="../Responsive-Portfolio/portfolio.html">Portfolio</a>
+    </nav>
+  </div>
+</header>
+
+<body>
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Portfolio</h1>
+      <hr>
+      <div id="game">
+        <div id="extra">
+          <h2>Rock, Paper, Scissors</h2>
+          <div id="Directions">
+            <p> Ready to play?</p>
+            <p>Enter your name to start.</p>
+            <input id="username" placeholder="Name" />
+            <button id="start">Start</button>
+          </div>
+          <div id="inPlay">
+            <div id="which-player"> </div>
+            <div id="current-turn"></div>
+            <div id="game-play">
+              <div id="player1">
+                <h3 id="player1-name">Player1</h3>
+                <div id="choices"></div>
+                <div id="player1-chosen"></div>
+                <div class="outcomes">
+                  <div class="outcome-trackers" id="player1-wins"></div>
+                  <div class="outcome-trackers" id="player1-losses"></div>
+                </div>
+              </div>
+              <div id="result">
+                <h2></h2>
+              </div>
+              <div id="player2">
+                <h3 id="player2-name">Player2</h3>
+                <div id="choices"></div>
+                <div id="player2-chosen"></div>
+                <div class="outcomes">
+                  <div class="outcome-trackers" id="player2-wins"></div>
+                  <div class="outcome-trackers" id="player2-losses"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="chat">
+            <h2 id="chat-header"></h2>
+            <div id="chat-messages"></div>
+            <div id="chat-bar">
+              <input id="chat-input" />
+              <button id="chat-send">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/JulesDisch/RPS-Multiplayer">Find on GitHub</a></section>
+  </div>
+  <div id="game-full" class="modal">
+    <div class="modal-content">
+      <h3 id="full">There's already two players!</h3>
+      <button id="ok">OK</button>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-database.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <br>
+  <script type="text/javascript" src="assets/javascript/app.js">
+  </script>
+  <footer>
+    <p>© 2019</p>
+  </footer>
+</body>
+
+</html>
