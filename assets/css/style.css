@@ -34,8 +34,7 @@ body {
   overflow: auto;
   padding: 20px;
   background-color: #043634;
-  border-color: #dddddd;
-  border: 1px solid;
+  border: 1px solid #dddddd;
   margin-top: 40px;
   margin-bottom: 40px;
   width: 100%;
@@ -226,7 +225,8 @@ hr {
   margin: 2% 0;
   text-align: center;
   vertical-align: top;
-  border: 2px solid #000;
+  border: 5px groove #010D27;
+  color: #7AE1F1;
 }
 
 #player1{
@@ -239,18 +239,20 @@ hr {
 
 #player1-name,
 #player2-name {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 28px;
  }
   
 #player1-chosen,
 #player2-chosen {
-  margin-top: 25px;
+  margin-top: 0px;
   font-size: 40px;
+  padding: 12px 0;
 }
   
 .outcomes {
   position: absolute;
+  margin-top: 10px;
   bottom: 10px;
   width: 90%;
   text-align: center;
@@ -298,7 +300,7 @@ hr {
   position: relative;
   width: 80%;
   margin: 20px auto;
-  border: 5px solid;
+  border: 5px groove;
   bottom: 20px
 }
 
@@ -314,7 +316,7 @@ hr {
   border: 1px solid;
   border-radius: 0px;
   background-color: rgba(1,16,39,0.7);
-  color: #0069AA; 
+  color: #7AE1F1; 
 }
   
 #chat-bar {
@@ -344,10 +346,6 @@ button {
   margin: 5px; 
 }
 
-button:hover {
-  background-color: darkslateblue
-}
-
 footer {
   position: fixed;
   width: 100%;
@@ -360,7 +358,6 @@ footer {
   z-index: 99;
   opacity: 0.9;
   background-color: #043634;
-  border-color: #cccccc;
   border-top:  2px  solid #cccccc;
 }
   
@@ -384,13 +381,13 @@ footer p {
   } 
 }
 
-@media screen and (max-width: 640px) {     
+@media screen and (max-width: 640px) {  
   header {
     position: static;
     width: auto;
     margin: -8px -8px 10px;
   }
-  
+
   footer {
     position: static;
     width: auto;
@@ -398,44 +395,76 @@ footer p {
     opacity: 1;
     border-radius: 0px;
   }
-  
+
   footer p {
     padding-bottom: 8px;
   }
-    
+  
   #logo {
     width: 100%;
     margin-left: 0px;
     clear: both; 
+    height: 50px;
+    line-height: initial;
+    padding-top: 10px;
   }
-  
+
   nav { 
     margin-left: 0px;
     clear: both; 
+    float: none;   
+    text-align: center;  
+    height: 50px;  
+    line-height: initial;  
+    padding-top: 10px;    
   }  
-  
+
   .dropdown-content a {
     padding: 5px 10px;
   }
-  
+
   #main-container {
-    padding-top: 10px;
+    padding-top: 50px;
   } 
-      
+    
   .main-section {
     width: 100%;
     margin-left: 0px
   }
-
+  
   #player1,
   #result,
   #player2 {     
-    height: 200px;
-       
+    height: 200px;  
   }
 
+  #player1-name,
+  #player2-name,
+  #player1-chosen,
+  #player2-chosen,
+  #result h2{
+    font-size: 100%;
+ }
+
   #current-turn h2 {  
-    margin-top: 10px;
-       
+    margin-top: 10px;   
+  }
+
+  #chat h2 {
+    padding: 10px 20px;
+  }
+
+  #chat-bar {
+    bottom: 10px;
+    padding-left: 0;
+    width: 95%;
+  }
+    
+  #chat-input {
+    width: 100%;
+  }
+    
+  #chat-send {
+    width: 100%;
   }
 }

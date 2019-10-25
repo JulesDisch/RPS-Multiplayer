@@ -124,14 +124,14 @@ $(document).ready(function () {
       if (currentTurn === 1) {
         // If its the current player's turn, tell them and show choices:
         if (currentTurn === playerNum) {
-          generateChoices();
+          setTimeout( generateChoices(), 3000);
         } else {
           // If it isn't the current players turn, tells them they're waiting for the other player:
           $("#current-turn h2").text("Waiting for " + playerOneData.name + " to choose.");
         }
         // Shows active player:
-        $("#player1").css("border", "2px solid white");
-        $("#player2").css("border", "2px solid navy");
+        $("#player1").css("border", "5px groove white");
+        $("#player2").css("border", "5px groove navy");
       } else if (currentTurn === 2) {
         if (currentTurn === playerNum) {
           generateChoices();
@@ -139,8 +139,8 @@ $(document).ready(function () {
           $("#current-turn h2").text("Waiting for " + playerTwoData.name + " to choose.");
         }
 
-        $("#player2").css("border", "2px solid white");
-        $("#player1").css("border", "2px solid navy");
+        $("#player2").css("border", "5px groove white");
+        $("#player1").css("border", "5px groove navy");
       } else if (currentTurn === 3) {
         // Where the game win logic happens:
         gameLogic(playerOneData.choice, playerTwoData.choice);
@@ -167,8 +167,8 @@ $(document).ready(function () {
         $("#player1 ul").empty();
         $("#player2 ul").empty();
         $("#current-turn").html("<h2>Waiting for another player to join.</h2>");
-        $("#player2").css("border", "1px solid black");
-        $("#player1").css("border", "1px solid black");
+        $("#player2").css("border", "5px groove #010D27");
+        $("#player1").css("border", "5px groove #010D27");
       }
     }
   });
