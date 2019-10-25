@@ -1,5 +1,6 @@
 $(document).ready(function () {
   $("#inPlay").hide();
+  $("#chat").hide();
 
   // Initialize Firebase
   var firebaseConfig = {
@@ -104,6 +105,7 @@ $(document).ready(function () {
       $("#player2-name").text(playerTwoData.name);
       $("#player2-wins").text("Wins: " + playerTwoData.wins);
       $("#player2-losses").text("Losses: " + playerTwoData.losses);
+      $("#chat").show();
       //  If there are two players, chat header will say "Chat with [other player]":
       if (username === playerTwoData.name) { $("#chat-header").text("Chat with " + playerOneData.name); }
       else if (username === playerOneData.name) { $("#chat-header").text("Chat with " + playerTwoData.name); }
